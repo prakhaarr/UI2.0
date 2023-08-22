@@ -1,0 +1,413 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(image1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar {
+    width: 85%;
+    height: 0.2cm;
+    margin: auto;
+    padding: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.logo {
+    width: 300px;
+    cursor: pointer;
+    margin-left: 40px;
+    image-rendering: optimizeSpeed;
+
+}
+
+
+.navbar ul li {
+    list-style: none;
+    display: inline;
+    margin: 0 20px;
+    position: relative;
+    left: -20%;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.navbar ul li ::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #fbff94d3;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+
+}
+
+.navbar ul li:hover ::after {
+    width: 100%;
+}
+
+.content {
+    width: 100%;
+    position: absolute;
+    top: 56%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+
+}
+
+.content h1 {
+    font-size: 70px;
+    margin-top: -180px;
+}
+
+.content p {
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+
+.btn button {
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 24px;
+    font-weight: bold;
+    border: 2px solid #099688;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn span {
+    background: #099688;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.btn button:hover span {
+
+    width: 100%;
+
+
+}
+
+.btn button:hover {
+    border: none;
+}
+
+.marquee-container {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    background: #fbff94d3;
+    overflow: hidden;
+    margin-top: 710px;
+}
+
+.marquee-text {
+    font-size: 36px;
+    text-transform: uppercase;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    -webkit-text-stroke-width: 0.1px;
+    -webkit-text-stroke-color: #2a2a2a;
+    /* text-stroke-color: #fff; */
+    white-space: nowrap;
+    padding: 0 6rem;
+    letter-spacing: 1px;
+    animation: move-rt1 15000ms linear infinite;
+}
+
+@keyframes move-rt1 {
+    from {
+        transform: translateX(-0%);
+
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+
+}
+
+.reg-now {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin: 40% 45%;
+    transform: translateY(-50%);
+
+}
+
+.reg-now-text {
+    color: #fff;
+    font-size: 12px;
+    width: 5cm;
+}
+
+.reg-button {
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px -20px;
+    border-radius: 24px;
+    font-weight: bold;
+    border: 2px solid #009688;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.reg-button span {
+    background: #009688;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.reg-button:hover span {
+    width: 100%;
+}
+
+.reg-button:hover {
+    border: none;
+    z-index: 1;
+    /* Add this line to ensure the button is on top */
+}
+
+h3 {
+
+    font-size: 12px;
+}
+
+.btn h3 {
+    margin-top: 40px;
+}
+
+footer {
+    position: relative;
+    bottom: 0%;
+    width: 100%;
+    background: #111;
+}
+
+.main-content {
+    display: flex;
+}
+
+.main-content .box {
+    flex-basis: 50%;
+    padding: 10px 20px;
+}
+
+.box h2 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.box .content {
+    margin: 20px 0px 0 0;
+    position: relative;
+
+}
+
+
+
+/* .box .content:after {
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 70%;
+    background: #fbff94d3;
+    top: -10px;
+    left: 200px;
+} */
+
+.left .content p {
+    text-align: justify;
+}
+
+.left .content .social {
+    margin: 20px 0 0 0;
+}
+
+.left .content .social a {
+    padding: 0 2px;
+}
+
+.left .content .social a span {
+    height: 40px;
+    width: 40px;
+    background: #1a1a1a;
+    line-height: 40px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.left .content .social a span:hover {
+    background: #fbff94d3;
+}
+
+.center .content .fas {
+    font-size: 1.4375rem;
+    background: #1a1a1a;
+    height: 45px;
+    width: 45px;
+    line-height: 45px;
+    text-align: center;
+    border-radius: 50%;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.center .content .fas:hover {
+    background: #fbff94d3;
+}
+
+.center .content .text {
+    font-size: 1.0625rem;
+    font-weight: 500;
+    padding-left: 10px;
+}
+
+.center .content .phone {
+    margin: 15px 0;
+}
+
+.right form .text {
+    font-size: 1.0625rem;
+    margin-bottom: 2px;
+    color: #656565;
+}
+
+.right form .msg {
+    margin-top: 10px;
+}
+
+.right form input,
+.right form textarea {
+    width: 100%;
+    font-size: 1.0625rem;
+    background: #151515;
+    padding-left: 10px;
+    border: 1px solid #222222;
+}
+
+.right form input:focus,
+.right form textarea:focus {
+    outline-color: #3498db;
+}
+
+.right form input {
+    height: 35px;
+}
+
+.right form .btn {
+    margin-top: 10px;
+}
+
+.right form .btn button {
+    height: 40px;
+    width: 100%;
+    border: none;
+    outline: none;
+    background: #fbff94d3;
+    font-size: 1.0625rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: .3s;
+    color: #000;
+}
+
+.right form .btn button:hover {
+    background: #000;
+    color: white;
+}
+
+.bottom center {
+    padding: 5px;
+    font-size: 0.9375rem;
+    background: #151515;
+}
+
+.bottom center span {
+    color: #656565;
+}
+
+.bottom center a {
+    color: #fbff94d3;
+    text-decoration: none;
+}
+
+.bottom center a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 900px) {
+    footer {
+        position: relative;
+        bottom: 0px;
+    }
+
+    .logo {
+        /* padding-left: 75px; */
+        padding-right: 500px;
+    }
+
+    .content h1 {
+        margin-top: 5px;
+        font-size: 18px;
+    }
+
+    .content p {
+        font-size: 12px;
+    }
+
+    .main-content {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .main-content .box {
+        margin: 5px 0;
+    }
+}
