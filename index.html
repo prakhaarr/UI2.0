@@ -18,17 +18,27 @@
 
     <div class="banner">
         <div class="navbar">
-            <img src="logo.png" alt="logo" class="logo">
-            <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="#about-us">About Us</a></li>
-                <li><a href="#contact-us">Contact</a></li>
-                <li><a href="">Login</a></li>
-            </ul>
+            <div class="toggle-btn" onclick="myFunction();">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="logo-container">
+                <img src="logo.png" alt="logo" class="logo">
+            </div>
+
+            <nav id="nav">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="#about-us">About Us</a></li>
+                    <li><a href="#contact-us">Contact</a></li>
+                    <li><a href="">Login</a></li>
+                </ul>
+            </nav>
         </div>
 
 
-        <div class="content">
+        <div class="content1">
             <h1>HouseHelp at your doorstep</h1>
             <p>We're building an AI-powered platform for quick connections between customers and housekeepers like
                 <br>maids,cooks and nannies. One click links customers with these workers, offering employment
@@ -143,7 +153,12 @@
         </footer>
     </div>
 
-
+    <script type="text/javascript">
+        function myFunction() {
+            var navbar = document.getElementById('nav');
+            navbar.classList.toggle('show')
+        }
+    </script>
 
 
 
