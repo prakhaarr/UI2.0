@@ -8,7 +8,7 @@
 .banner {
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(image1.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.70)), url(image1.jpeg);
     background-size: cover;
     background-position: center;
 }
@@ -78,6 +78,37 @@
 .content1 h1 {
     font-size: 70px;
     margin-top: -180px;
+    color: white;
+
+
+}
+
+.title {
+    background: linear-gradient(45deg, #FFD700, #FFD700, #3DFF33, #33FFF1);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: gradientAnimation 10s infinite alternate;
+}
+
+@keyframes gradientAnimation {
+
+    0%,
+    100% {
+        filter: hue-rotate(0deg);
+    }
+
+    25% {
+        filter: hue-rotate(90deg);
+    }
+
+    50% {
+        filter: hue-rotate(180deg);
+    }
+
+    75% {
+        filter: hue-rotate(270deg);
+    }
 }
 
 .content1 p {
@@ -123,6 +154,7 @@
 .btn button:hover {
     border: none;
 }
+
 
 .marquee-container {
     position: relative;
@@ -333,6 +365,7 @@ footer {
     background: #151515;
     padding-left: 10px;
     border: 1px solid #222222;
+    color: white;
 }
 
 .right form input:focus,
@@ -427,6 +460,19 @@ nav ul li a {
     margin-left: 38px;
 }
 
+.yellow-box {
+    background-color: #fbff94d3;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    text-align: center;
+
+    display: none;
+    /* width: 80.5%; */
+    /* Initially hidden */
+}
+
 @media screen and (max-width: 900px) {
     footer {
         position: relative;
@@ -436,8 +482,9 @@ nav ul li a {
 
     /* new */
     .toggle-btn {
+        margin-top: -31px;
         display: block;
-
+        right: 45px;
     }
 
     .logo {
@@ -496,7 +543,7 @@ nav ul li a {
         border-top: 1px solid #fbff94d3;
         padding-top: 6px;
         padding-left: 10px;
-        margin-top: 150px;
+        margin-top: 90px;
         text-align: left;
     }
 
@@ -549,6 +596,15 @@ nav ul li a {
 
     .main-content .box {
         margin: 5px 0;
+    }
+
+
+    /* new */
+    .yellow-box {
+        display: block;
+        text-align: center;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        /* Show the yellow box */
     }
 
 
