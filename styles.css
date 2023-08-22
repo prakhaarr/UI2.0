@@ -561,7 +561,7 @@ nav ul li a {
 
 
     .marquee-container {
-        position: absolute;
+        position: relative;
         display: flex;
         justify-content: flex-start;
         background: #fbff94d3;
